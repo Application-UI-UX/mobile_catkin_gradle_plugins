@@ -16,4 +16,5 @@
 
 /* rootProject.name = 'catkin' */
 
-include 'rosjava_gradle_plugins'
+include 'gradle_plugins'
+include 'message_generator'

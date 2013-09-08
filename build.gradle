@@ -21,7 +21,6 @@ task wrapper(type: Wrapper) {
 
 allprojects {
     group='org.ros.rosjava_bootstrap'
-    version='0.1.0-SNAPSHOT'
 }
 
 subprojects {
