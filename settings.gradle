@@ -18,3 +18,5 @@
 
 include 'gradle_plugins'
 include 'message_generation'
+include 'rosjava_test_msgs'
+include 'message_generation_tests'
