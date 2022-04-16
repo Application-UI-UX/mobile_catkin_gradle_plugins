@@ -27,6 +27,9 @@ rootProject.buildscript {
                 }
             }
         }
+        mavenCentral(){
+            allowInsecureProtocol = true
+        }
         maven {
             url "https://repository.springsource.com/maven/bundles/release"
         }
