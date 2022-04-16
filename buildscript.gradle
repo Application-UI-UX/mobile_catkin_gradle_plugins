@@ -27,13 +27,12 @@ rootProject.buildscript {
                 }
             }
         }
-        mavenCentral(){
-            allowInsecureProtocol = true
-        }
         maven {
+            allowInsecureProtocol = true
             url "https://repository.springsource.com/maven/bundles/release"
         }
         maven {
+            allowInsecureProtocol = true
             url "https://repository.springsource.com/maven/bundles/external"
         }
         if (rosMavenRepository != null) {
@@ -42,6 +41,7 @@ rootProject.buildscript {
             }
         }
         maven {
+            allowInsecureProtocol = true
             // url "https://github.com/rosjava/rosjava_mvn_repo/raw/master"
             url "https://github.com/Application-UI-UX/rosjava_mvn_repo/raw/noetic"
         }
