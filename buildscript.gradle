@@ -14,6 +14,9 @@
  * the License.
  */
 
+  // Maintainer
+  // Ronaldson Bellande
+
 rootProject.buildscript {
     String rosMavenPath = System.getenv("ROS_MAVEN_PATH")
     String rosMavenRepository = System.getenv("ROS_MAVEN_REPOSITORY")
