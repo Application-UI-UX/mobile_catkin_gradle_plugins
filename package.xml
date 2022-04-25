@@ -1,17 +1,25 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>rosjava_bootstrap</name>
-  <version>0.3.3</version>
-  <description>
-    Bootstrap utilities for rosjava builds.
-  </description>
+  <version>0.4.0</version>
+  <description>Bootstrap utilities for rosjava builds.</description>
   <url>http://ros.org/wiki/rosjava_bootstrap</url>
-  <maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+  <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>
+
   <author>Daniel Stonier</author>
   <author>Damon Kohler</author>
   <license>Apache 2.0</license>
-  <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>rosjava_build_tools</build_depend>
-  <run_depend>rosjava_build_tools</run_depend>
-</package>
 
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rosjava_build_tools</build_depend>
+
+
+  <build_export_depend>rosjava_build_tools</build_export_depend>
+
+
+  <exec_depend>rosjava_build_tools</exec_depend>
+
+
+</package>
