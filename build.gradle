@@ -21,7 +21,6 @@ allprojects {
   version = "0.3.3"
   repositories {
     maven {
-      allowInsecureProtocol = true
       url 'https://repo1.maven.org/maven2'
       url = "https://maven.pkg.github.com/Application-UI-UX"
     }
@@ -43,7 +42,6 @@ subprojects {
 
   // These external repositories are copied from bootstrap.gradle.
   repositories {
-    jcenter()
     maven {
       url "https://repository.springsource.com/maven/bundles/release"
     }
