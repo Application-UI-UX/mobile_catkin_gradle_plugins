@@ -14,7 +14,10 @@
  * the License.
  */
 
-apply from: project.file('gradle.gradle')
+wrapper {
+  gradleVersion = "7.2.0"
+  distributionUrl = distributionUrl.replace("bin", "all")
+}
 
 allprojects {
   group="org.ros.rosjava_bootstrap"
@@ -32,7 +35,6 @@ allprojects {
 
 subprojects {
   apply plugin: 'java'
-  apply plugin: 'maven'
   apply plugin: 'maven-publish'
   apply plugin: "idea"
   apply plugin: "eclipse"

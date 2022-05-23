@@ -33,23 +33,16 @@ rootProject.buildscript {
             }
         }
         maven {
-            allowInsecureProtocol = true
-            url "https://repository.springsource.com/maven/bundles/release"
+            url = "https://repository.springsource.com/maven/bundles/release"
+            url = "https://repository.springsource.com/maven/bundles/external"
+            url = "https://github.com/Application-UI-UX/rosjava_mvn_repo/raw/noetic"
         }
-        maven {
-            allowInsecureProtocol = true
-            url "https://repository.springsource.com/maven/bundles/external"
-        }
+        google()
         if (rosMavenRepository != null) {
             maven {
                 url rosMavenRepository
             }
         }
-        maven {
-            url "https://github.com/Application-UI-UX/rosjava_mvn_repo/raw/noetic"
-        }
-        google()
-        jcenter()
     }
     dependencies {
         classpath "org.ros.rosjava_bootstrap:gradle_plugins:[0.3,0.4)"
