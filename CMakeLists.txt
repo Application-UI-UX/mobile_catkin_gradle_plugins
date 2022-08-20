@@ -5,7 +5,7 @@ find_package(catkin REQUIRED rosjava_build_tools)
 
 catkin_rosjava_setup(publish installDist)
 
-catkin_package()
+catkin_package(CATKIN_DEPENDS rosjava_build_tools)
 
 install(
   DIRECTORY ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_MAVEN_DESTINATION}/org/ros/rosjava_bootstrap/
