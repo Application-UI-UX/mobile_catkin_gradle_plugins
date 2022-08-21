@@ -23,6 +23,13 @@ BUILD_SHARED_LIBS:BOOL=ON
 //Catkin enable testing
 CATKIN_ENABLE_TESTING:BOOL=ON
 
+//path to which gradle configuration and artifacts are deployed
+// in your workspace
+CATKIN_GLOBAL_GRADLE_DESTINATION:PATH=share/gradle
+
+//path to which maven artifacts are deployed in your workspace
+CATKIN_GLOBAL_MAVEN_DESTINATION:PATH=share/maven
+
 //Prefix to apply to package generated via gendebian
 CATKIN_PACKAGE_PREFIX:STRING=
 
@@ -422,8 +429,11 @@ rosjava_bootstrap_BINARY_DIR:STATIC=/home/ronaldsonbellande-hplaptop/Desktop/Use
 //Value Computed by CMake
 rosjava_bootstrap_SOURCE_DIR:STATIC=/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_bootstrap
 
+//Path to a file.
+rosjava_bootstrap_gradle_BINARY:FILEPATH=/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_bootstrap/gradlew
+
 //The directory containing a CMake configuration file for rosjava_build_tools.
-rosjava_build_tools_DIR:PATH=rosjava_build_tools_DIR-NOTFOUND
+rosjava_build_tools_DIR:PATH=/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_build_tools/devel/share/rosjava_build_tools/cmake
 
 
 ########################
