@@ -3,7 +3,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.ros</groupId>
+  <groupId>org.ros.rosjava_bootstrap</groupId>
   <artifactId>rosjava_bootstrap</artifactId>
   <version>0.4.0-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -24,6 +24,16 @@
     </repository>
   </distributionManagement>
 
+  <repositories>
+    <repository>
+      <id>rosjava_bootstrap</id>
+      <url>https://raw.github.com/Application-UI-UX/rosjava_bootstrap/</url>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
+  </repositories>
 
   <developers>
     <developer>
@@ -36,10 +46,10 @@
 
 
   <scm>
-    <connection>scm:git:git://github.com/Application-UI-UX/rosjava_bootstrap.git</connection>
-    <developerConnection>scm:git:https://github.com/Application-UI-UX/rosjava_bootstrap.git</developerConnection>
+    <connection>scm:git:https://github.com/Application-UI-UX/rosjava_bootstrap.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/Application-UI-UX/rosjava_bootstrap.git</developerConnection>
     <url>https://github.com/Application-UI-UX/rosjava_bootstrap</url>
-    <tag>rosjava_bootstrap</tag>
+    <tag>rosjava_bootstrap-0.4.0</tag>
   </scm>
 
 
@@ -63,8 +73,30 @@
           <version>2.22.1</version>
         </plugin>
         <plugin>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <executions>
+            <execution>
+              <phase>package</phase>
+              <goals>
+                <goal>single</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <descriptorRefs>
+              <descriptorRef>jar-with-dependencies</descriptorRef>
+            </descriptorRefs>
+          </configuration>
+        </plugin>
+        <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
+          <configuration>
+            <classesDirectory>src</classesDirectory>
+            <excludes>
+              <exclude>**</exclude>
+            </excludes>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
@@ -83,10 +115,32 @@
           <version>3.6.0</version>
         </plugin>
         <plugin>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>2.3</version>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
           <configuration>
             <altDeploymentRepository>github::default::https://maven.pkg.github.com/Application-UI-UX/rosjava_bootstrap</altDeploymentRepository>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>3.0.0-M1</version>
+          <configuration>
+            <checkModificationExcludes>
+              <checkModificationExclude>pom.xml</checkModificationExclude>
+            </checkModificationExcludes>
           </configuration>
         </plugin>
       </plugins>
