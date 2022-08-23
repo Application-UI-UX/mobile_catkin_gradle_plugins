@@ -14,6 +14,11 @@
  * the License.
  */
 
+  /*
+  Maintainer
+  Ronaldson Bellande
+  */
+
 wrapper {
   gradleVersion = "7.2.0"
   distributionUrl = distributionUrl.replace("bin", "all")
@@ -25,6 +30,7 @@ allprojects {
   repositories {
     maven {
       url 'https://repo1.maven.org/maven2'
+
       url = "https://maven.pkg.github.com/Application-UI-UX"
     }
     mavenLocal()
