@@ -35,7 +35,8 @@ allprojects {
       url = "https://maven.pkg.github.com/Application-UI-UX"
     }
     mavenLocal()
-    mavenCentral()
+    maven { url = "https://repo.maven.apache.org/maven2" }
+    maven { url = "https://jcenter.bintray.com" }
     google()
   }
 }
