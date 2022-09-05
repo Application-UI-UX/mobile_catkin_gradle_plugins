@@ -14,13 +14,13 @@
  * the License.
  */
 
-package org.ros.internal.message;
+package com.github.internal.message;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.ros.internal.message.service.ServiceDefinitionResourceProvider;
-import org.ros.internal.message.service.ServiceRequestMessageFactory;
-import org.ros.internal.message.service.ServiceResponseMessageFactory;
+import com.github.internal.message.service.ServiceDefinitionResourceProvider;
+import com.github.internal.message.service.ServiceRequestMessageFactory;
+import com.github.internal.message.service.ServiceResponseMessageFactory;
 
 /**
  * @author damonkohler@google.com (Damon Kohler)
@@ -35,10 +35,8 @@ public class ServiceTest {
   public void setUp() {
     serviceDefinitionResourceProvider = new ServiceDefinitionResourceProvider();
     serviceDefinitionResourceProvider.add("foo/Echo", "string data\n---\nstring data");
-    serviceRequestMessageFactory =
-        new ServiceRequestMessageFactory(serviceDefinitionResourceProvider);
-    serviceResponseMessageFactory =
-        new ServiceResponseMessageFactory(serviceDefinitionResourceProvider);
+    serviceRequestMessageFactory = new ServiceRequestMessageFactory(serviceDefinitionResourceProvider);
+    serviceResponseMessageFactory = new ServiceResponseMessageFactory(serviceDefinitionResourceProvider);
   }
 
   @Test

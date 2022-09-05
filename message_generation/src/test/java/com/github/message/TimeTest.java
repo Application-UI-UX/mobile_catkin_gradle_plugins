@@ -14,7 +14,7 @@
  * the License.
  */
 
-package org.ros.message;
+package com.github.message;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -92,7 +92,7 @@ public class TimeTest {
     assertEquals(0, new Time(0, 0).compareTo(new Time(0, 0)));
     assertEquals(0, new Time(1, 1).compareTo(new Time(1, 1)));
     assertTrue(new Time(0, 1).compareTo(new Time(0, 0)) > 0);
-    
+
     assertEquals(-1, new Time(0, 0).compareTo(new Time(0, 1)));
     assertTrue(new Time(0, 0).compareTo(new Time(0, 1)) < 0);
     assertTrue(new Time(1, 0).compareTo(new Time(0, 0)) > 0);

@@ -14,12 +14,12 @@
  * the License.
  */
 
-package org.ros.internal.message.field;
+package com.github.internal.message.field;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
-import org.ros.internal.message.MessageBuffers;
+import com.github.internal.message.MessageBuffers;
 
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.junit.Test;
@@ -108,9 +108,8 @@ public class ArrayFieldTest {
     assertEquals(PrimitiveFieldType.FLOAT64, field.getType());
     ChannelBuffer buffer = MessageBuffers.dynamicBuffer();
     field.serialize(buffer);
-    byte[] expected =
-        new byte[] { 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, -16, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0,
-            0, 8, 64, 0, 0, 0, 0, 0, 0, 16, 64 };
+    byte[] expected = new byte[] { 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, -16, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0,
+        0, 8, 64, 0, 0, 0, 0, 0, 0, 16, 64 };
     byte[] actual = new byte[buffer.readableBytes()];
     buffer.readBytes(actual);
     assertArrayEquals(expected, actual);
@@ -123,9 +122,8 @@ public class ArrayFieldTest {
     assertEquals(PrimitiveFieldType.FLOAT64, field.getType());
     ChannelBuffer buffer = MessageBuffers.dynamicBuffer();
     field.serialize(buffer);
-    byte[] expected =
-        new byte[] { 0, 0, 0, 0, 0, 0, -16, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 8, 64,
-            0, 0, 0, 0, 0, 0, 16, 64 };
+    byte[] expected = new byte[] { 0, 0, 0, 0, 0, 0, -16, 63, 0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 8, 64,
+        0, 0, 0, 0, 0, 0, 16, 64 };
     byte[] actual = new byte[buffer.readableBytes()];
     buffer.readBytes(actual);
     assertArrayEquals(expected, actual);
@@ -138,8 +136,7 @@ public class ArrayFieldTest {
     assertEquals(PrimitiveFieldType.FLOAT32, field.getType());
     ChannelBuffer buffer = MessageBuffers.dynamicBuffer();
     field.serialize(buffer);
-    byte[] expected =
-        new byte[] { 4, 0, 0, 0, 0, 0, -128, 63, 0, 0, 0, 64, 0, 0, 64, 64, 0, 0, -128, 64 };
+    byte[] expected = new byte[] { 4, 0, 0, 0, 0, 0, -128, 63, 0, 0, 0, 64, 0, 0, 64, 64, 0, 0, -128, 64 };
     byte[] actual = new byte[buffer.readableBytes()];
     buffer.readBytes(actual);
     assertArrayEquals(expected, actual);
@@ -206,9 +203,8 @@ public class ArrayFieldTest {
     assertEquals(type, field.getType());
     ChannelBuffer buffer = MessageBuffers.dynamicBuffer();
     field.serialize(buffer);
-    byte[] expected =
-        new byte[] { 4, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0,
-            0, 0, 4, 0, 0, 0, 0, 0, 0, 0 };
+    byte[] expected = new byte[] { 4, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0,
+        0, 0, 4, 0, 0, 0, 0, 0, 0, 0 };
     byte[] actual = new byte[buffer.readableBytes()];
     buffer.readBytes(actual);
     assertArrayEquals(expected, actual);
@@ -226,9 +222,8 @@ public class ArrayFieldTest {
     assertEquals(type, field.getType());
     ChannelBuffer buffer = MessageBuffers.dynamicBuffer();
     field.serialize(buffer);
-    byte[] expected =
-        new byte[] { 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 4, 0,
-            0, 0, 0, 0, 0, 0 };
+    byte[] expected = new byte[] { 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 4, 0,
+        0, 0, 0, 0, 0, 0 };
     byte[] actual = new byte[buffer.readableBytes()];
     buffer.readBytes(actual);
     assertArrayEquals(expected, actual);

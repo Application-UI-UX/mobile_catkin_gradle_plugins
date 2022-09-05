@@ -14,20 +14,20 @@
  * the License.
  */
 
-package org.ros.internal.message;
+package com.github.internal.message;
 
 import static org.junit.Assert.assertEquals;
 
-import org.ros.internal.message.definition.MessageDefinitionProviderChain;
+import com.github.internal.message.definition.MessageDefinitionProviderChain;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.ros.internal.message.service.ServiceDefinitionResourceProvider;
-import org.ros.internal.message.service.ServiceDescription;
-import org.ros.internal.message.service.ServiceDescriptionFactory;
-import org.ros.internal.message.topic.TopicDefinitionResourceProvider;
-import org.ros.internal.message.topic.TopicDescription;
-import org.ros.internal.message.topic.TopicDescriptionFactory;
+import com.github.internal.message.service.ServiceDefinitionResourceProvider;
+import com.github.internal.message.service.ServiceDescription;
+import com.github.internal.message.service.ServiceDescriptionFactory;
+import com.github.internal.message.topic.TopicDefinitionResourceProvider;
+import com.github.internal.message.topic.TopicDescription;
+import com.github.internal.message.topic.TopicDescriptionFactory;
 
 /**
  * @author damonkohler@google.com (Damon Kohler)
@@ -39,8 +39,7 @@ public class Md5GeneratorTest {
 
   @Before
   public void setUp() {
-    MessageDefinitionProviderChain messageDefinitionProviderChain =
-        new MessageDefinitionProviderChain();
+    MessageDefinitionProviderChain messageDefinitionProviderChain = new MessageDefinitionProviderChain();
     messageDefinitionProviderChain
         .addMessageDefinitionProvider(new TopicDefinitionResourceProvider());
     messageDefinitionProviderChain
@@ -51,8 +50,7 @@ public class Md5GeneratorTest {
 
   @Test
   public void testPrimitives() {
-    TopicDescription topicDescription =
-        topicDescriptionFactory.newFromType("test_msgs/TestPrimitives");
+    TopicDescription topicDescription = topicDescriptionFactory.newFromType("test_msgs/TestPrimitives");
     assertEquals("3e70f428a22c0d26ca67f87802c8e00f", topicDescription.getMd5Checksum());
   }
 
@@ -94,15 +92,13 @@ public class Md5GeneratorTest {
 
   @Test
   public void testAddTwoInts() {
-    ServiceDescription serviceDescription =
-        serviceDescriptionFactory.newFromType("test_msgs/AddTwoInts");
+    ServiceDescription serviceDescription = serviceDescriptionFactory.newFromType("test_msgs/AddTwoInts");
     assertEquals("6a2e34150c00229791cc89ff309fff21", serviceDescription.getMd5Checksum());
   }
 
   @Test
   public void testTransitiveSrv() {
-    ServiceDescription serviceDescription =
-        serviceDescriptionFactory.newFromType("test_msgs/TransitiveSrv");
+    ServiceDescription serviceDescription = serviceDescriptionFactory.newFromType("test_msgs/TransitiveSrv");
     assertEquals("8b7918ee2b81eaf825f4c70de011f6fa", serviceDescription.getMd5Checksum());
   }
 }

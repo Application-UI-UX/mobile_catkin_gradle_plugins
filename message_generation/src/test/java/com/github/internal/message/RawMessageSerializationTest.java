@@ -14,7 +14,7 @@
  * the License.
  */
 
-package org.ros.internal.message;
+package com.github.internal.message;
 
 import static org.junit.Assert.assertTrue;
 
@@ -24,10 +24,10 @@ import java.util.Arrays;
 import org.jboss.netty.buffer.ChannelBuffer;
 import org.junit.Before;
 import org.junit.Test;
-import org.ros.internal.message.topic.TopicDefinitionResourceProvider;
-import org.ros.message.Duration;
-import org.ros.message.MessageFactory;
-import org.ros.message.Time;
+import com.github.internal.message.topic.TopicDefinitionResourceProvider;
+import com.github.message.Duration;
+import com.github.message.MessageFactory;
+import com.github.message.Time;
 
 /**
  * @author damonkohler@google.com (Damon Kohler)
@@ -48,9 +48,9 @@ public class RawMessageSerializationTest {
     ChannelBuffer buffer = MessageBuffers.dynamicBuffer();
     DefaultMessageSerializer serializer = new DefaultMessageSerializer();
     serializer.serialize(message, buffer);
-    DefaultMessageDeserializer<RawMessage> deserializer =
-        new DefaultMessageDeserializer<RawMessage>(message.toRawMessage().getIdentifier(),
-            messageFactory);
+    DefaultMessageDeserializer<RawMessage> deserializer = new DefaultMessageDeserializer<RawMessage>(
+        message.toRawMessage().getIdentifier(),
+        messageFactory);
     RawMessage deserializedMessage = deserializer.deserialize(buffer);
     assertTrue(message.equals(deserializedMessage));
   }
@@ -140,7 +140,7 @@ public class RawMessageSerializationTest {
     rawMessage.setString("data", "Hello, ROS!");
     checkSerializeAndDeserialize(rawMessage);
   }
-  
+
   @Test
   public void testStringUTF8() {
     RawMessage rawMessage = messageFactory.newFromType("std_msgs/String");
@@ -267,7 +267,7 @@ public class RawMessageSerializationTest {
     rawMessage.setFloat64Array("data", new double[] { 1, 2, 3, 4, 5 });
     checkSerializeAndDeserialize(rawMessage);
   }
-  
+
   @Test
   public void testChannelBufferFixedSizeWithInitialization() {
     topicDefinitionResourceProvider.add("foo/foo", "uint8[5] data");
@@ -296,7 +296,7 @@ public class RawMessageSerializationTest {
     rawMessage.setChannelBuffer("data", buffer);
     checkSerializeAndDeserialize(rawMessage);
   }
-  
+
   @Test
   public void testInt32FixedSizeArrayWithInitialization() {
     topicDefinitionResourceProvider.add("foo/foo", "int32[5] data");
@@ -304,7 +304,7 @@ public class RawMessageSerializationTest {
     rawMessage.setInt32Array("data", new int[] { 1, 2, 3, 4, 5 });
     checkSerializeAndDeserialize(rawMessage);
   }
-  
+
   @Test
   public void testInt32FixedSizeArrayWithIncompleteInitialization() {
     topicDefinitionResourceProvider.add("foo/foo", "int32[5] data");
@@ -335,7 +335,7 @@ public class RawMessageSerializationTest {
     rawMessage.setFloat64Array("data", new double[] { 1, 2, 3 });
     checkSerializeAndDeserialize(rawMessage);
   }
-  
+
   @Test
   public void testFloat64FixedSizeArrayNoInitialization() {
     topicDefinitionResourceProvider.add("foo/foo", "float64[5] data");

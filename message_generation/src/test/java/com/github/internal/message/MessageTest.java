@@ -14,7 +14,7 @@
  * the License.
  */
 
-package org.ros.internal.message;
+package com.github.internal.message;
 
 import static org.junit.Assert.assertEquals;
 
@@ -24,8 +24,8 @@ import org.jboss.netty.buffer.ChannelBuffer;
 import org.jboss.netty.buffer.ChannelBuffers;
 import org.junit.Before;
 import org.junit.Test;
-import org.ros.internal.message.topic.TopicDefinitionResourceProvider;
-import org.ros.message.MessageFactory;
+import com.github.internal.message.topic.TopicDefinitionResourceProvider;
+import com.github.message.MessageFactory;
 
 import java.nio.ByteOrder;
 

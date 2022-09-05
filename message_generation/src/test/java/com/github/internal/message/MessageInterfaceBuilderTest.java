@@ -14,15 +14,15 @@
  * the License.
  */
 
-package org.ros.internal.message;
+package com.github.internal.message;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.ros.internal.message.topic.TopicDefinitionResourceProvider;
-import org.ros.message.MessageDeclaration;
-import org.ros.message.MessageFactory;
+import com.github.internal.message.topic.TopicDefinitionResourceProvider;
+import com.github.message.MessageDeclaration;
+import com.github.message.MessageFactory;
 
 /**
  * @author damonkohler@google.com (Damon Kohler)
@@ -47,7 +47,7 @@ public class MessageInterfaceBuilderTest {
     builder.setAddConstantsAndMethods(true);
     String result = builder.build(messageFactory);
     assertEquals("package foo;\n\n"
-        + "public interface bar extends org.ros.internal.message.Message {\n"
+        + "public interface bar extends com.github.internal.message.Message {\n"
         + "  static final java.lang.String _TYPE = \"foo/bar\";\n"
         + "  static final java.lang.String _DEFINITION = \"int32 foo\\nint32 Foo\";\n"
         + "  int getFoo();\n" + "  void setFoo(int value);\n" + "}\n", result);
