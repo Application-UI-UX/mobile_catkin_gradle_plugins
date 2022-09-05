@@ -14,17 +14,17 @@
  * the License.
  */
 
-package org.ros.internal.message.context;
+package com.github.internal.message.context;
 
 import com.google.common.base.Preconditions;
 
-import org.ros.internal.message.definition.MessageDefinitionParser.MessageDefinitionVisitor;
-import org.ros.internal.message.field.Field;
-import org.ros.internal.message.field.FieldFactory;
-import org.ros.internal.message.field.FieldType;
-import org.ros.internal.message.field.MessageFieldType;
-import org.ros.internal.message.field.PrimitiveFieldType;
-import org.ros.message.MessageIdentifier;
+import com.github.internal.message.definition.MessageDefinitionParser.MessageDefinitionVisitor;
+import com.github.internal.message.field.Field;
+import com.github.internal.message.field.FieldFactory;
+import com.github.internal.message.field.FieldType;
+import com.github.internal.message.field.MessageFieldType;
+import com.github.internal.message.field.PrimitiveFieldType;
+import com.github.message.MessageIdentifier;
 
 /**
  * @author damonkohler@google.com (Damon Kohler)
@@ -44,8 +44,7 @@ class MessageContextBuilder implements MessageDefinitionVisitor {
     if (PrimitiveFieldType.existsFor(type)) {
       fieldType = PrimitiveFieldType.valueOf(type.toUpperCase());
     } else {
-      fieldType =
-          new MessageFieldType(MessageIdentifier.of(type), messageContext.getMessageFactory());
+      fieldType = new MessageFieldType(MessageIdentifier.of(type), messageContext.getMessageFactory());
     }
     return fieldType;
   }
