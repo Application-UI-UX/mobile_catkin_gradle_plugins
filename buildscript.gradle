@@ -20,31 +20,21 @@
   */
 
 rootProject.buildscript {
-    String rosMavenPath = System.getenv("ROS_MAVEN_PATH")
-    String rosMavenRepository = System.getenv("ROS_MAVEN_REPOSITORY")
     repositories {
-        if (rosMavenPath != null) {
-            rosMavenPath.tokenize(":").each { path ->
-                maven {
-                    // We can't use uri() here because we aren't running inside something
-                    // that implements the Script interface.
-                    url "file:${path}"
-                }
-            }
-        }
+        mavenCentral()
+        maven { url "https://jitpack.io" }
         maven {
+            url 'https://repo1.maven.org/maven2'
             url = "https://repository.springsource.com/maven/bundles/release"
             url = "https://repository.springsource.com/maven/bundles/external"
-            url = "https://github.com/Application-UI-UX/rosjava_mvn_repo/raw/noetic"
         }
+        mavenLocal()
+        maven { url = "https://repo.maven.apache.org/maven2" }
+        maven { url = "https://jcenter.bintray.com" }
         google()
-        if (rosMavenRepository != null) {
-            maven {
-                url rosMavenRepository
-            }
-        }
+        google()
     }
     dependencies {
-        classpath "org.ros.rosjava_bootstrap:gradle_plugins:[0.3,0.4)"
+        implementation 'com.github.Application-UI-UX:rosjava_build_tools:0.4.0'
     }
 }

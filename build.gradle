@@ -14,21 +14,29 @@
  * the License.
  */
 
+  /*
+  Maintainer
+  Ronaldson Bellande
+  */
+
 wrapper {
   gradleVersion = "7.2.0"
   distributionUrl = distributionUrl.replace("bin", "all")
 }
 
 allprojects {
-  group="org.ros.rosjava_bootstrap"
-  version = "0.3.3"
+  group="com.github.rosjava_bootstrap"
+  version = "0.4.0"
   repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
     maven {
       url 'https://repo1.maven.org/maven2'
       url = "https://maven.pkg.github.com/Application-UI-UX"
     }
     mavenLocal()
-    mavenCentral()
+    maven { url = "https://repo.maven.apache.org/maven2" }
+    maven { url = "https://jcenter.bintray.com" }
     google()
   }
 }
@@ -50,26 +58,6 @@ subprojects {
     maven {
       url "https://repository.springsource.com/maven/bundles/external"
     }
-  }
-
-  // Configuration of the deployment repository is copied from the RosPlugin.
-  String mavenDeploymentRepository = System.getenv("ROS_MAVEN_DEPLOYMENT_REPOSITORY")
-  if (mavenDeploymentRepository != null &&
-      mavenDeploymentRepository != "") {
-    publishing {
-      publications {
-        mavenJava(MavenPublication) {
-          from components.java
-        }
-      }
-      repositories {
-        maven {
-           url 'file://' + mavenDeploymentRepository
-        }
-      }
-    }
-  } else {
-    logger.warn("ROS_MAVEN_DEPLOYMENT_REPOSITORY is not set. Have you sourced setup.bash?")
   }
 }
 
