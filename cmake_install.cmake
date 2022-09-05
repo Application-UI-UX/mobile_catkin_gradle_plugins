@@ -144,7 +144,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/maven/org/ros/rosjava_bootstrap" TYPE DIRECTORY FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_bootstrap/devel/share/maven/org/ros/rosjava_bootstrap/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/maven/com/github/rosjava_bootstrap" TYPE DIRECTORY FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_bootstrap/devel/share/maven/com/github/rosjava_bootstrap/")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

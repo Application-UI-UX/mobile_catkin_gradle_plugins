@@ -8,6 +8,6 @@ catkin_rosjava_setup(publish installDist)
 catkin_package(CATKIN_DEPENDS rosjava_build_tools)
 
 install(
-  DIRECTORY ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_MAVEN_DESTINATION}/org/ros/rosjava_bootstrap/
-  DESTINATION ${CATKIN_GLOBAL_MAVEN_DESTINATION}/org/ros/rosjava_bootstrap
+  DIRECTORY ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_MAVEN_DESTINATION}/com/github/rosjava_bootstrap/
+  DESTINATION ${CATKIN_GLOBAL_MAVEN_DESTINATION}/com/github/rosjava_bootstrap
 )
