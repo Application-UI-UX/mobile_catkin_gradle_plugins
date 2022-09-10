@@ -50,7 +50,6 @@ subprojects {
   sourceCompatibility = 1.6
   targetCompatibility = 1.6
 
-  // These external repositories are copied from bootstrap.gradle.
   repositories {
     maven {
       url "https://repository.springsource.com/maven/bundles/release"
