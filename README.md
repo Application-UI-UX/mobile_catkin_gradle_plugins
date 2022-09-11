@@ -1,4 +1,4 @@
-## RosJava Messages
+## RosJava BootStrap
 
 Updated Version [rosjava_core](https://github.com/Application-UI-UX/rosjava_bootstrap) readme.
 
