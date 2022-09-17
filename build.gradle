@@ -37,6 +37,9 @@ allprojects {
     maven { url = "https://jcenter.bintray.com" }
     google()
   }
+  tasks.withType(JavaCompile) {
+    options.compilerArgs << '-Xlint:-options'
+  }
 }
 
 subprojects {
