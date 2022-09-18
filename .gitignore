@@ -1,11 +1,6 @@
 .gradle
-build
-bin
 .project
 .classpath
 .settings
 *.iml
 .idea
-local.properties
-bazel-*
-target/
