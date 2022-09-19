@@ -18,7 +18,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Application-UI-UX Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/Application-UI-UX/rosjava_bootstrap</url>
+      <url>https://github.com/Application-UI-UX/rosjava_bootstrap</url>
     </repository>
   </distributionManagement>
 
