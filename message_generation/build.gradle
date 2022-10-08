@@ -32,5 +32,4 @@ dependencies {
 
 apply plugin: "application"
 
-//noinspection GroovyUnusedAssignment
 mainClassName = "com.github.internal.message.GenerateInterfaces"
