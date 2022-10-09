@@ -14,10 +14,10 @@
  * the License.
  */
 
-  /*
-  Maintainer
-  Ronaldson Bellande
-  */
+/*
+Maintainer
+Ronaldson Bellande
+*/
 
 rootProject.buildscript {
     repositories {
