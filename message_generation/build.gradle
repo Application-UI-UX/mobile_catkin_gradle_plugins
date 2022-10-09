@@ -19,6 +19,17 @@ Maintainer
 Ronaldson Bellande
 */
 
+android {
+  compileSdk 32
+  defaultConfig {
+    minSdk 21
+    targetSdk 32
+    versionCode 1
+    versionName "1.0"
+    applicationId "com.github.message_generation"
+  }
+}
+
 dependencies {
   implementation 'io.netty:netty:3.5.2.Final'
   implementation 'com.google.guava:guava:12.0'
@@ -32,5 +43,4 @@ dependencies {
 
 apply plugin: "application"
 
-//noinspection GroovyUnusedAssignment
 mainClassName = "com.github.internal.message.GenerateInterfaces"
