@@ -14,5 +14,42 @@
  * the License.
  */
 
-include 'gradle_plugins'
-include 'message_generation'
+pluginManagement {
+    repositories {
+        maven {
+            url = "https://jitpack.io"
+            url = 'https://repo1.maven.org/maven2'
+            url = "https://repository.springsource.com/maven/bundles/release"
+            url = "https://repository.springsource.com/maven/bundles/external"
+            url = "https://repo.maven.apache.org/maven2"
+            url = "https://jcenter.bintray.com"
+        }
+        gradlePluginPortal()
+        mavenCentral()
+        mavenLocal()
+        google()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven {
+            url = "https://jitpack.io"
+            url = 'https://repo1.maven.org/maven2'
+            url = "https://repository.springsource.com/maven/bundles/release"
+            url = "https://repository.springsource.com/maven/bundles/external"
+            url = "https://repo.maven.apache.org/maven2"
+            url = "https://jcenter.bintray.com"
+        }
+        mavenCentral()
+        mavenLocal()
+        google()
+    }
+}
+
+
+include "gradle_plugins",
+        "message_generation"
+
+rootProject.name = "rosjava_bootstrap"
