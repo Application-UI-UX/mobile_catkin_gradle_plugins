@@ -19,6 +19,10 @@ Maintainer
 Ronaldson Bellande
 */
 
+plugins {
+    id 'com.android.application'
+    id "com.android.library"
+}
 rootProject.buildscript {
     repositories {
         maven {
