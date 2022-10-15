@@ -19,6 +19,10 @@ Maintainer
 Ronaldson Bellande
 */
 
+plugins {
+    id 'com.android.application'
+    id "com.android.library"
+}
 rootProject.buildscript {
     repositories {
         maven {
@@ -28,13 +32,28 @@ rootProject.buildscript {
             url = "https://repository.springsource.com/maven/bundles/external"
             url = "https://repo.maven.apache.org/maven2"
             url = "https://jcenter.bintray.com"
+            url = 'https://maven.google.com'
         }
+        gradlePluginPortal()
         mavenCentral()
         mavenLocal()
         google()
     }
+    plugins {
+        id "application" apply false
+        id "java" apply false
+        id "marven-publish" apply false
+        id "idea" apply false
+        id "com.android.application" version "7.2.0" apply false
+        id "com.android.library" version "7.2.0" apply false
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.0'
+        classpath 'com.google.gms:google-services:3.2.1'
+        implementation 'com.github.Application-UI-UX:rosjava_build_tools:0.4.0'
+    }
 }
 
-dependencies {
-    implementation 'com.github.Application-UI-UX:rosjava_build_tools:0.4.0'
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }

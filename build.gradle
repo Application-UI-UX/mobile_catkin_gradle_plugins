@@ -24,33 +24,11 @@ wrapper {
   distributionUrl = distributionUrl.replace("bin", "all")
 }
 
-allprojects {
-  repositories {
-    maven {
-      url = "https://jitpack.io"
-      url = 'https://repo1.maven.org/maven2'
-      url = "https://repository.springsource.com/maven/bundles/release"
-      url = "https://repository.springsource.com/maven/bundles/external"
-      url = "https://repo.maven.apache.org/maven2"
-      url = "https://jcenter.bintray.com"
-    }
-    mavenCentral()
-    mavenLocal()
-    google()
-  }
-  tasks.withType(JavaCompile) {
-    options.compilerArgs << '-Xlint:-options'
-  }
-}
-
 subprojects {
   apply plugin: 'java'
   apply plugin: 'maven-publish'
-  apply plugin: "idea"
-
-  sourceCompatibility = 1.6
-  targetCompatibility = 1.6
-
+  group 'com.github.Application-UI-UX'
+  version '0.4.0'
   repositories {
     maven {
       url = "https://jitpack.io"
