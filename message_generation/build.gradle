@@ -19,28 +19,45 @@ Maintainer
 Ronaldson Bellande
 */
 
-android {
-  compileSdk 32
-  defaultConfig {
-    minSdk 21
-    targetSdk 32
-    versionCode 1
-    versionName "1.0"
-    applicationId "com.github.message_generation"
-  }
+plugins {
+  id "application"
 }
 
 dependencies {
+  implementation project(':gradle_plugins')
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+  implementation 'com.android.tools.build:gradle:7.3.0'
   implementation 'io.netty:netty:3.5.2.Final'
   implementation 'com.google.guava:guava:12.0'
   implementation 'org.apache.commons:com.springsource.org.apache.commons.codec:1.3.0'
   implementation 'org.apache.commons:com.springsource.org.apache.commons.io:1.4.0'
   implementation 'org.apache.commons:com.springsource.org.apache.commons.lang:2.4.0'
   implementation 'commons-pool:commons-pool:1.6'
-  implementation project(':gradle_plugins')
   testImplementation 'junit:junit:4.8.2'
 }
 
-apply plugin: "application"
+android {
+  compileSdk 32
+  namespace "com.github.Application-UI-UX.message_generation"
+  defaultConfig {
+    minSdk 21
+    targetSdk 32
+    versionCode 1
+    versionName "0.4.0"
+    applicationId "com.github.Application-UI-UX.message_generation"
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+  }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}
 
 mainClassName = "com.github.internal.message.GenerateInterfaces"
+
