@@ -24,6 +24,31 @@ wrapper {
   distributionUrl = distributionUrl.replace("bin", "all")
 }
 
+allprojects {
+  apply plugin: 'java'
+  apply plugin: 'maven-publish'
+  group 'com.github.Application-UI-UX'
+  version '0.4.0'
+  repositories {
+    maven {
+      url = "https://jitpack.io"
+      url = 'https://repo1.maven.org/maven2'
+      url = "https://repository.springsource.com/maven/bundles/release"
+      url = "https://repository.springsource.com/maven/bundles/external"
+      url = "https://repo.maven.apache.org/maven2"
+      url = "https://jcenter.bintray.com"
+    }
+    mavenCentral()
+    mavenLocal()
+    google()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:7.2.0'
+    classpath 'com.google.gms:google-services:4.3.14'
+    implementation 'com.github.Application-UI-UX:rosjava_build_tools:0.4.0'
+  }
+}
+
 subprojects {
   apply plugin: 'java'
   apply plugin: 'maven-publish'
@@ -42,6 +67,15 @@ subprojects {
     mavenLocal()
     google()
   }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:7.2.0'
+    classpath 'com.google.gms:google-services:4.3.14'
+    implementation 'com.github.Application-UI-UX:rosjava_build_tools:0.4.0'
+  }
+}
+
+task clean_project(type: Delete) {
+  delete rootProject.buildDir
 }
 
 defaultTasks 'publish', 'installDist'
