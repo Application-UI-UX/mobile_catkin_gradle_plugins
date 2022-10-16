@@ -21,6 +21,8 @@ Ronaldson Bellande
 
 plugins {
   id "application"
+  id "com.github.application"
+  id "com.android.library"
 }
 
 dependencies {
