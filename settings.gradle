@@ -48,8 +48,7 @@ dependencyResolutionManagement {
     }
 }
 
-
-include ":app",
+include "app",
         "gradle_plugins",
         "message_generation"
 
