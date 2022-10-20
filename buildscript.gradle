@@ -54,7 +54,7 @@ rootProject.buildscript {
         id "com.android.library" version "7.2.0" apply false
     }
     dependencies {
-        implementation "com.android.tools.build:gradle:7.2.0"
+        implementation 'com.android.tools.build:gradle:2.3.0'
         implementation "com.google.gms:google-services:3.2.1"
         implementation "androidx.navigation.safeargs:androidx.navigation.safeargs.gradle.plugin:2.4.1"
         implementation 'com.github.Application-UI-UX:rosjava_build_tools:0.4.0'
