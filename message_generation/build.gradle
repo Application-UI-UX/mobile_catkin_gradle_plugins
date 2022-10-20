@@ -19,12 +19,6 @@ Maintainer
 Ronaldson Bellande
 */
 
-//plugins {
-//  id "application"
-//  id "com.github.application"
-//  id "com.android.library"
-//}
-
 dependencies {
   implementation project(':gradle_plugins')
   implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -38,29 +32,5 @@ dependencies {
   testImplementation 'junit:junit:4.13.2'
 }
 
-
-//android {
-//  compileSdk 32
-//  namespace "com.github.Application-UI-UX.message_generation"
-//  defaultConfig {
-//    minSdk 21
-//    targetSdk 32
-//    versionCode 1
-//    versionName "0.4.0"
-//    applicationId "com.github.Application-UI-UX.message_generation"
-//    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-//  }
-//  buildTypes {
-//    release {
-//      minifyEnabled false
-//      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-//    }
-//  }
-//  compileOptions {
-//    sourceCompatibility JavaVersion.VERSION_1_8
-//    targetCompatibility JavaVersion.VERSION_1_8
-//  }
-//}
-
-//mainClassName = "com.github.internal.message.GenerateInterfaces"
+mainClassName = "com.github.internal.message.GenerateInterfaces"
 

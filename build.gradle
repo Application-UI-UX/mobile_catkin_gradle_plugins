@@ -43,7 +43,7 @@ allprojects {
     google()
   }
   dependencies {
-    implementation 'com.android.tools.build:gradle:7.2.0'
+    implementation 'com.android.tools.build:gradle:2.3.0'
     implementation "com.github.Application-UI-UX:rosjava_build_tools:0.4.0"
   }
 }
@@ -68,7 +68,7 @@ subprojects {
     google()
   }
   dependencies {
-    implementation 'com.android.tools.build:gradle:7.2.0'
+    implementation 'com.android.tools.build:gradle:2.3.0'
     implementation 'com.github.Application-UI-UX:rosjava_build_tools:0.4.0'
   }
   afterEvaluate {
