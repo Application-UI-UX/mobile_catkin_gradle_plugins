@@ -54,6 +54,8 @@ rootProject.buildscript {
         id "com.android.library" version "7.2.0" apply false
     }
     dependencies {
+
+        implementation 'org.jboss.netty:netty:3.2.10.Final'
         implementation 'com.android.tools.build:gradle:2.3.0'
         implementation "com.google.gms:google-services:3.2.1"
         implementation "androidx.navigation.safeargs:androidx.navigation.safeargs.gradle.plugin:2.4.1"
