@@ -29,6 +29,7 @@ import com.github.exception.RosMessageRuntimeException;
  * returned using {@link #release(ChannelBuffer)}.
  * 
  * @author damonkohler@google.com (Damon Kohler)
+ * @contributor ronaldsonbellande@gmail.com (Ronaldson Bellande)
  */
 public class MessageBufferPool {
 
