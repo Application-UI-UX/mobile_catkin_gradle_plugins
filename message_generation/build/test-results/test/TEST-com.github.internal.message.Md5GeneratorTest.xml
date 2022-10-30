@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.internal.message.Md5GeneratorTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-10-30T03:11:33" hostname="ronaldsonbellande-hplaptop" time="0.02">
+  <properties/>
+  <testcase name="testPrimitives" classname="com.github.internal.message.Md5GeneratorTest" time="0.002"/>
+  <testcase name="testOdometry" classname="com.github.internal.message.Md5GeneratorTest" time="0.01"/>
+  <testcase name="testEmpty" classname="com.github.internal.message.Md5GeneratorTest" time="0.001"/>
+  <testcase name="testComposite" classname="com.github.internal.message.Md5GeneratorTest" time="0.001"/>
+  <testcase name="testAddTwoInts" classname="com.github.internal.message.Md5GeneratorTest" time="0.001"/>
+  <testcase name="testTransitiveSrv" classname="com.github.internal.message.Md5GeneratorTest" time="0.002"/>
+  <testcase name="testArrays" classname="com.github.internal.message.Md5GeneratorTest" time="0.001"/>
+  <testcase name="testHeader" classname="com.github.internal.message.Md5GeneratorTest" time="0.001"/>
+  <testcase name="testString" classname="com.github.internal.message.Md5GeneratorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
