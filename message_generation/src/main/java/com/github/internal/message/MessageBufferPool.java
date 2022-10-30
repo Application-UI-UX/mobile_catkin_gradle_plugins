@@ -17,9 +17,8 @@
 package com.github.internal.message;
 
 import org.apache.commons.pool.ObjectPool;
-import org.apache.commons.pool.PoolableObjectFactory;
-import org.apache.commons.pool.impl.StackObjectPool;
 import org.jboss.netty.buffer.ChannelBuffer;
+
 import com.github.exception.RosMessageRuntimeException;
 
 /**
@@ -29,37 +28,43 @@ import com.github.exception.RosMessageRuntimeException;
  * returned using {@link #release(ChannelBuffer)}.
  * 
  * @author damonkohler@google.com (Damon Kohler)
+ * @contributor ronaldsonbellande@gmail.com (Ronaldson Bellande)
  */
 public class MessageBufferPool {
 
-  private final ObjectPool<ChannelBuffer> pool;
+  private final ObjectPool pool;
 
-  public MessageBufferPool() {
-    pool = new StackObjectPool<ChannelBuffer>(new PoolableObjectFactory<ChannelBuffer>() {
-      @Override
-      public ChannelBuffer makeObject() throws Exception {
-        return MessageBuffers.dynamicBuffer();
-      }
-
-      @Override
-      public void destroyObject(ChannelBuffer channelBuffer) throws Exception {
-      }
-
-      @Override
-      public boolean validateObject(ChannelBuffer channelBuffer) {
-        return true;
-      }
-
-      @Override
-      public void activateObject(ChannelBuffer channelBuffer) throws Exception {
-      }
-
-      @Override
-      public void passivateObject(ChannelBuffer channelBuffer) throws Exception {
-        channelBuffer.clear();
-      }
-    });
+  public MessageBufferPool(ObjectPool pool) {
+    this.pool = pool;
   }
+
+//
+//  public MessageBufferPool() {
+//    pool = new StackObjectPool<ChannelBuffer>(new PoolableObjectFactory<ChannelBuffer>() {
+//      @Override
+//      public ChannelBuffer makeObject() throws Exception {
+//        return MessageBuffers.dynamicBuffer();
+//      }
+//
+//      @Override
+//      public void destroyObject(ChannelBuffer channelBuffer) throws Exception {
+//      }
+//
+//      @Override
+//      public boolean validateObject(ChannelBuffer channelBuffer) {
+//        return true;
+//      }
+//
+//      @Override
+//      public void activateObject(ChannelBuffer channelBuffer) throws Exception {
+//      }
+//
+//      @Override
+//      public void passivateObject(ChannelBuffer channelBuffer) throws Exception {
+//        channelBuffer.clear();
+//      }
+//    });
+//  }
 
   /**
    * Acquired {@link ChannelBuffer}s must be returned using
@@ -69,7 +74,7 @@ public class MessageBufferPool {
    */
   public ChannelBuffer acquire() {
     try {
-      return pool.borrowObject();
+      return (ChannelBuffer) pool.borrowObject();
     } catch (Exception e) {
       throw new RosMessageRuntimeException(e);
     }
