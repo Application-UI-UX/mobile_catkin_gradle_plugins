@@ -20,9 +20,15 @@ Ronaldson Bellande
 */
 
 plugins {
-    id 'com.android.application'
-    id "com.android.library"
+    id "application" apply false
+    id "java" apply false
+    id "maven-publish" apply false
+    id "idea" apply false
+    id "com.android.application" version '7.2.0' apply false
+    id 'com.android.library' version '7.2.0' apply false
+    id "com.google.android.libraries.mapsplatform.secrets-gradle-plugin" version "2.0.1" apply false
 }
+
 rootProject.buildscript {
     repositories {
         maven {
@@ -44,14 +50,6 @@ rootProject.buildscript {
         mavenCentral()
         mavenLocal()
         google()
-    }
-    plugins {
-        id "application" apply false
-        id "java" apply false
-        id "marven-publish" apply false
-        id "idea" apply false
-        id "com.android.application" version "7.2.0" apply false
-        id "com.android.library" version "7.2.0" apply false
     }
     dependencies {
 

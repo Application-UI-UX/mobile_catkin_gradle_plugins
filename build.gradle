@@ -19,11 +19,6 @@
   Ronaldson Bellande
   */
 
-wrapper {
-  gradleVersion = "7.2.0"
-  distributionUrl = distributionUrl.replace("bin", "all")
-}
-
 allprojects {
   apply plugin: 'java'
   apply plugin: 'maven-publish'
