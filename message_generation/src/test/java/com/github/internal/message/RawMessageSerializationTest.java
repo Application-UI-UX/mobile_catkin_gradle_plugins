@@ -16,12 +16,14 @@
 
 package com.github.internal.message;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import com.google.common.collect.Lists;
 import java.util.Arrays;
 
 import org.jboss.netty.buffer.ChannelBuffer;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import com.github.internal.message.topic.TopicDefinitionResourceProvider;
@@ -32,6 +34,7 @@ import com.github.message.Time;
 /**
  * @author damonkohler@google.com (Damon Kohler)
  * @author mick.gaillard@gmail.com (Mickael Gaillard)
+ * @contrubutor ronaldsonbellande@gmail.com (Ronaldson Bellande)
  */
 public class RawMessageSerializationTest {
 
@@ -49,10 +52,10 @@ public class RawMessageSerializationTest {
     DefaultMessageSerializer serializer = new DefaultMessageSerializer();
     serializer.serialize(message, buffer);
     DefaultMessageDeserializer<RawMessage> deserializer = new DefaultMessageDeserializer<RawMessage>(
-        message.toRawMessage().getIdentifier(),
-        messageFactory);
+            message.toRawMessage().getIdentifier(),
+            messageFactory);
     RawMessage deserializedMessage = deserializer.deserialize(buffer);
-    assertTrue(message.equals(deserializedMessage));
+    assertEquals(message, deserializedMessage);
   }
 
   @Test
@@ -290,11 +293,18 @@ public class RawMessageSerializationTest {
 
   @Test
   public void testChannelBufferFixedSizeNoInitialization() {
-    topicDefinitionResourceProvider.add("foo/foo", "uint8[5] data");
-    ChannelBuffer buffer = MessageBuffers.dynamicBuffer();
-    RawMessage rawMessage = messageFactory.newFromType("foo/foo");
-    rawMessage.setChannelBuffer("data", buffer);
-    checkSerializeAndDeserialize(rawMessage);
+    try {
+      topicDefinitionResourceProvider.add("foo/foo", "uint8[5] data");
+      ChannelBuffer buffer = MessageBuffers.dynamicBuffer();
+      RawMessage rawMessage = messageFactory.newFromType("foo/foo");
+      rawMessage.setChannelBuffer("data", buffer);
+      checkSerializeAndDeserialize(rawMessage);
+    }
+    catch (Exception e) {
+      RawMessage rawMessage = messageFactory.newFromType("foo/foo");
+      checkSerializeAndDeserialize(rawMessage);
+      Assert.fail("Size was not Initialized; Exception " + e);
+    }
   }
 
   @Test
@@ -307,10 +317,17 @@ public class RawMessageSerializationTest {
 
   @Test
   public void testInt32FixedSizeArrayWithIncompleteInitialization() {
-    topicDefinitionResourceProvider.add("foo/foo", "int32[5] data");
-    RawMessage rawMessage = messageFactory.newFromType("foo/foo");
-    rawMessage.setInt32Array("data", new int[] { 1, 2, 3 });
-    checkSerializeAndDeserialize(rawMessage);
+    try {
+      topicDefinitionResourceProvider.add("foo/foo", "int32[5] data");
+      RawMessage rawMessage = messageFactory.newFromType("foo/foo");
+      rawMessage.setInt32Array("data", new int[] { 1, 2, 3 });
+      checkSerializeAndDeserialize(rawMessage);
+    }
+    catch (Exception e) {
+      RawMessage rawMessage = messageFactory.newFromType("foo/foo");
+      checkSerializeAndDeserialize(rawMessage);
+      Assert.fail("Array with incomplete with Initialized; Exception " + e);
+    }
   }
 
   @Test
@@ -329,7 +346,7 @@ public class RawMessageSerializationTest {
   }
 
   @Test
-  public void testFloat64FixedSizeArrayWithIncompleteInitialization() {
+  public void testFloat64FixedSizeArrayWithIncompleteInitialization() throws Exception {
     topicDefinitionResourceProvider.add("foo/foo", "float64[5] data");
     RawMessage rawMessage = messageFactory.newFromType("foo/foo");
     rawMessage.setFloat64Array("data", new double[] { 1, 2, 3 });
