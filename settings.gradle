@@ -48,8 +48,7 @@ dependencyResolutionManagement {
     }
 }
 
-include "app",
-        "gradle_plugins",
+include "gradle_plugins",
         "message_generation"
 
 rootProject.name = "rosjava_bootstrap"
