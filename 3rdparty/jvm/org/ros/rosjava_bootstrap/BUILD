@@ -2,7 +2,7 @@
 java_library(
     name = "gradle_plugins",
     exports = [
-        "//external:jar/org/ros/rosjava_bootstrap/gradle_plugins"
+        "//external:jar/org/ros/rosmobile_bootstrap/gradle_plugins"
     ],
     visibility = [
         "//visibility:public"
@@ -14,7 +14,7 @@ java_library(
 java_library(
     name = "message_generation",
     exports = [
-        "//external:jar/org/ros/rosjava_bootstrap/message_generation"
+        "//external:jar/org/ros/rosmobile_bootstrap/message_generation"
     ],
     runtime_deps = [
         "//3rdparty/jvm/com/google/guava:guava",

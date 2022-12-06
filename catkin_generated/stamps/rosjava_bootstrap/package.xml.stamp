@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>rosjava_bootstrap</name>
+  <name>rosmobile_bootstrap</name>
   <version>0.4.0</version>
   <description>Bootstrap utilities for rosjava builds.</description>
-  <url>http://ros.org/wiki/rosjava_bootstrap</url>
+  <url>http://ros.org/wiki/rosmobile_bootstrap</url>
   <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>
 
   <author>Daniel Stonier</author>

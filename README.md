@@ -1,8 +1,8 @@
 ## RosJava BootStrap
 
-Updated Version [rosjava_bootstrap](https://github.com/Application-UI-UX/rosmobile_bootstrap) readme.
+Updated Version [rosmobile_bootstrap](https://github.com/Application-UI-UX/rosmobile_bootstrap) readme.
 
-Standard Version [rosjava_bootstrap](https://github.com/rosjava/rosjava_bootstrap) readme.
+Standard Version [rosmobile_bootstrap](https://github.com/rosjava/rosmobile_bootstrap) readme.
 
 This package is a generator of rosjava message artifacts for core ros messages for mobile
 

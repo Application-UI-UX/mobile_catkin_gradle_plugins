@@ -3,7 +3,7 @@
   <name>rosmobile_bootstrap</name>
   <version>0.4.0</version>
   <description>Bootstrap utilities for rosmobile builds.</description>
-  <url>http://ros.org/wiki/rosjava_bootstrap</url>
+  <url>http://ros.org/wiki/rosmobile_bootstrap</url>
   <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>
 
   <author>Daniel Stonier</author>
