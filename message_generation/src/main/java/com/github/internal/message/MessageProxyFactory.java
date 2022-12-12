@@ -31,7 +31,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class MessageProxyFactory {
 
-  // We can't use the constant here since the rosjava_messages package depends
+  // We can't use the constant here since the rosmobile_messages package depends
   // on rosmobile_bootstrap.
   private static final String HEADER_MESSAGE_TYPE = "std_msgs/Header";
   private static final String SEQUENCE_FIELD_NAME = "seq";
