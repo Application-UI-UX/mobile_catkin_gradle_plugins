@@ -40,7 +40,7 @@ dependencies {
   implementation 'org.apache.commons:com.springsource.org.apache.commons.io:1.4.0'
   implementation 'org.apache.commons:com.springsource.org.apache.commons.lang:2.4.0'
   implementation 'commons-pool:commons-pool:20030825.183949'
-  implementation 'com.github.Application-UI-UX:rosjava_build_tools:0.4.0'
+  implementation 'com.github.Application-UI-UX:rosmobile_build_tools:0.4.0'
   testImplementation 'junit:junit:4.13.2'
 }
 

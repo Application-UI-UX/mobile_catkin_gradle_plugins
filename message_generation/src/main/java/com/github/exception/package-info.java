@@ -15,6 +15,6 @@
  */
 
 /**
- * Provides the classes for representing common rosjava exceptions.
+ * Provides the classes for representing common rosmobile exceptions.
  */
 package com.github.exception;
