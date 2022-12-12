@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_bootstrap
+CMAKE_SOURCE_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_bootstrap
+CMAKE_BINARY_DIR = /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_bootstrap && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_bootstrap /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_bootstrap /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_bootstrap /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_bootstrap /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosjava_bootstrap/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

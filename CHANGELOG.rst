@@ -28,7 +28,7 @@ Changelog
 
 0.3.1 (2016-12-28)
 ------------------
-* Switch Gradle target for rosjava libraries to publish
+* Switch Gradle target for rosmobile libraries to publish
 * Switch from Maven Central to jcenter
 * Gradle 2.2.1 -> 2.14.1
 * Android SDK Build Tools 21.1.2 -> 25.0.2
@@ -110,7 +110,7 @@ Changelog
 
 0.1.7 (2013-09-23)
 ------------------
-* use maven-publish plugin for publishing rosjava packages.
+* use maven-publish plugin for publishing rosmobile packages.
 * centralise last code snippets from android build.gradle's.
 
 0.1.6 (2013-09-22)
@@ -144,5 +144,5 @@ Changelog
 0.1.0 (2013-09-12)
 ------------------
 * several plugins for sharing of ros gradle logic
-* message generation code brought in from rosjava_core
+* message generation code brought in from rosmobile_core
 
