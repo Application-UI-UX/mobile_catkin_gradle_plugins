@@ -5,4 +5,4 @@ Description: Description of rosmobile_bootstrap
 Version: 0.4.0
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: rosjava_build_tools
+Requires: rosmobile_build_tools

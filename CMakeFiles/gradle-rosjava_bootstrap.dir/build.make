@@ -55,7 +55,7 @@ include CMakeFiles/gradle-rosmobile_bootstrap.dir/progress.make
 
 CMakeFiles/gradle-rosmobile_bootstrap:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Gradling tasks for rosmobile_bootstrap"
-	ROS_MAVEN_DEPLOYMENT_REPOSITORY=/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/devel/share/maven ROS_MAVEN_REPOSITORY=https://github.com/rosjava/rosjava_mvn_repo/raw/master /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/env_cached.sh /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/gradlew -q publish installDist
+	ROS_MAVEN_DEPLOYMENT_REPOSITORY=/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/devel/share/maven ROS_MAVEN_REPOSITORY=https://github.com/rosmobile/rosmobile_mvn_repo/raw/master /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/env_cached.sh /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/gradlew -q publish installDist
 
 gradle-rosmobile_bootstrap: CMakeFiles/gradle-rosmobile_bootstrap
 gradle-rosmobile_bootstrap: CMakeFiles/gradle-rosmobile_bootstrap.dir/build.make

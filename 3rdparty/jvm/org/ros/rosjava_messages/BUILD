@@ -2,7 +2,7 @@
 java_library(
     name = "rosgraph_msgs",
     exports = [
-        "//external:jar/org/ros/rosjava_messages/rosgraph_msgs"
+        "//external:jar/org/ros/rosmobile_messages/rosgraph_msgs"
     ],
     runtime_deps = [
         "//3rdparty/jvm/org/ros/rosmobile_bootstrap:message_generation",
@@ -18,7 +18,7 @@ java_library(
 java_library(
     name = "std_msgs",
     exports = [
-        "//external:jar/org/ros/rosjava_messages/std_msgs"
+        "//external:jar/org/ros/rosmobile_messages/std_msgs"
     ],
     runtime_deps = [
         "//3rdparty/jvm/org/ros/rosmobile_bootstrap:message_generation"
