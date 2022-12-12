@@ -1,8 +1,8 @@
 prefix=/usr/local
 
-Name: rosjava_bootstrap
-Description: Description of rosjava_bootstrap
+Name: rosmobile_bootstrap
+Description: Description of rosmobile_bootstrap
 Version: 0.4.0
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: rosjava_build_tools
+Requires: rosmobile_build_tools

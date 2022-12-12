@@ -2,10 +2,10 @@
 java_library(
     name = "rosgraph_msgs",
     exports = [
-        "//external:jar/org/ros/rosjava_messages/rosgraph_msgs"
+        "//external:jar/org/ros/rosmobile_messages/rosgraph_msgs"
     ],
     runtime_deps = [
-        "//3rdparty/jvm/org/ros/rosjava_bootstrap:message_generation",
+        "//3rdparty/jvm/org/ros/rosmobile_bootstrap:message_generation",
         ":std_msgs"
     ],
     visibility = [
@@ -18,10 +18,10 @@ java_library(
 java_library(
     name = "std_msgs",
     exports = [
-        "//external:jar/org/ros/rosjava_messages/std_msgs"
+        "//external:jar/org/ros/rosmobile_messages/std_msgs"
     ],
     runtime_deps = [
-        "//3rdparty/jvm/org/ros/rosjava_bootstrap:message_generation"
+        "//3rdparty/jvm/org/ros/rosmobile_bootstrap:message_generation"
     ],
     visibility = [
         "//visibility:public"

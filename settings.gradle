@@ -51,4 +51,4 @@ dependencyResolutionManagement {
 include "gradle_plugins",
         "message_generation"
 
-rootProject.name = "rosjava_bootstrap"
+rootProject.name = "rosmobile_bootstrap"
