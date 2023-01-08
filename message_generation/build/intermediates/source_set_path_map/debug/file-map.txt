@@ -1,0 +1,8 @@
+com.github.message_generation-pngs-0 /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/message_generation/build/generated/res/pngs/debug
+com.github.message_generation-resValues-1 /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/message_generation/build/generated/res/resValues/debug
+com.github.message_generation-rs-2 /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/message_generation/build/generated/res/rs/debug
+com.github.message_generation-mergeDebugResources-3 /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/message_generation/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.github.message_generation-mergeDebugResources-4 /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/message_generation/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.github.message_generation-merged_res-5 /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/message_generation/build/intermediates/merged_res/debug
+com.github.message_generation-debug-6 /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/message_generation/src/debug/res
+com.github.message_generation-main-7 /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/message_generation/src/main/res
