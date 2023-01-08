@@ -42,16 +42,16 @@ buildscript {
     google()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:7.3.1'
+    classpath 'com.android.tools.build:gradle:7.3.0'
 //    classpath 'org.jboss.netty:netty:3.2.10.Final'
-//    classpath "androidx.navigation.safeargs:androidx.navigation.safeargs.gradle.plugin:2.5.3"
+   // classpath "androidx.navigation.safeargs:androidx.navigation.safeargs.gradle.plugin:2.5.3"
     classpath 'com.github.Application-UI-UX:rosmobile_build_tools:0.4.0'
   }
 }
 
 plugins {
-  id "com.android.application" version "7.3.1" apply false
-  id "com.android.library" version "7.3.1" apply false
+  id "com.android.application" version "7.3.0" apply false
+  id "com.android.library" version "7.3.0" apply false
 //  id "org.jboss.netty:netty" version "3.2.10.Final" apply false
 //  id "androidx.navigation.safeargs:androidx.navigation.safeargs.gradle.plugin" version "2.5.3" apply false
 }
@@ -110,10 +110,10 @@ subprojects {
           }
         }
         compileOptions {
-          sourceCompatibility JavaVersion.VERSION_1_8
-          targetCompatibility JavaVersion.VERSION_1_8
+          targetCompatibility JavaVersion.VERSION_11
+          sourceCompatibility JavaVersion.VERSION_11
         }
-}
+      }
     }
   }
 }
