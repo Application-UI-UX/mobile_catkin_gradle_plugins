@@ -49,5 +49,4 @@ dependencyResolutionManagement {
 }
 
 include "message_generation"
-
 rootProject.name = "rosmobile_bootstrap"
