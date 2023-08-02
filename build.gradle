@@ -42,7 +42,7 @@ buildscript {
     google()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:7.3.0'
+    classpath 'com.android.tools.build:gradle:7.2.2'
 //    classpath 'org.jboss.netty:netty:3.2.10.Final'
    // classpath "androidx.navigation.safeargs:androidx.navigation.safeargs.gradle.plugin:2.5.3"
     classpath 'com.github.Application-UI-UX:rosmobile_build_tools:0.4.0'
