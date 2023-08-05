@@ -3,7 +3,7 @@ Changelog
 
 0.4.0 (2021-05-19)
 ------------------
-* Update package.xml, CMakeList.txt for noetic branch
+* Update package.xml, CMakeList.txt for main branch
 * Update gradle and wapper to be up-to-date
 * Fix Bugs that has to do with the gradle building
 * Contributors: Ronaldson Bellande
