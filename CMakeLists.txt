@@ -5,7 +5,7 @@ find_package(catkin REQUIRED COMPONENTS rosmobile_build_tools)
 
 catkin_rosmobile_setup(publish installDist)
 
-set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} /opt/ros/noetic)
+set(CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH} /opt/ros/main)
 
 catkin_package(CATKIN_DEPENDS rosmobile_build_tools)
 
