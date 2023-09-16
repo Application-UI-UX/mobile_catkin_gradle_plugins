@@ -15,8 +15,8 @@ This package is a generator of rosmobile message artifacts for core ros messages
 The repository has diverged, as the old commits and codes are under the previous License and
 the new commits and codes are under New License
 
-----
 
+------------------------------------------------------------------------------
 Latest versions and Maintainer is on Application-UI-UX
 
 ### Building and Packaging
