@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>mobile_catkin_gradle_plugins</name>
-  <version>0.4.0</version>
+  <version>0.4.1</version>
   <description>Bootstrap utilities for rosmobile builds.</description>
   <url>http://ros.org/wiki/mobile_catkin_gradle_plugins</url>
   <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>
