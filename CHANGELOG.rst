@@ -1,6 +1,17 @@
 Changelog
 =========
 
+0.4.1 (2023-09-19)
+------------------
+* Fix countless bugs in the repository 
+* Rerelease dedicated code for maven, ros, and python
+* Change name for more discriptions a take down old publish namees
+* Make repository compatible with ROS2 and will now be compatible for ROS1 and ROS2
+* Upgrade version of all builds and make it more compatible
+* Fix countless bugs in the repository and recalibrate
+* Release dedicated code for maven, ros, and python 
+* Maintainer & Contributors & Aurthor: Ronaldson Bellande
+
 0.4.0 (2021-05-19)
 ------------------
 * Update package.xml, CMakeList.txt for main branch
@@ -10,7 +21,7 @@ Changelog
 
 0.3.3 (2019-01-17)
 ------------------
-  Gradle upgrade to version 4.10.2.
+* Gradle upgrade to version 4.10.2.
 * Adding google to repository list in buildscript.gradle.
 * Using ChannelBuffers for int8[] data; fixing testInt8List.
 * Adding action generation implementation.

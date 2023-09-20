@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: mobile_catkin_gradle_plugins
+Description: Description of mobile_catkin_gradle_plugins
+Version: 0.4.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rosmobile_build_tools

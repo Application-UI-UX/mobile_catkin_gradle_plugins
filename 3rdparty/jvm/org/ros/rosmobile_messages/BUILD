@@ -5,7 +5,7 @@ java_library(
         "//external:jar/org/ros/rosmobile_messages/rosgraph_msgs"
     ],
     runtime_deps = [
-        "//3rdparty/jvm/org/ros/rosmobile_bootstrap:message_generation",
+        "//3rdparty/jvm/org/ros/mobile_catkin_gradle_plugins:message_generation",
         ":std_msgs"
     ],
     visibility = [
@@ -21,7 +21,7 @@ java_library(
         "//external:jar/org/ros/rosmobile_messages/std_msgs"
     ],
     runtime_deps = [
-        "//3rdparty/jvm/org/ros/rosmobile_bootstrap:message_generation"
+        "//3rdparty/jvm/org/ros/mobile_catkin_gradle_plugins:message_generation"
     ],
     visibility = [
         "//visibility:public"
