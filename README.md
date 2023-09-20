@@ -1,22 +1,23 @@
-## RosMobile BootStrap
+## ROS Mobile Catkin Gradle Plugins 
 
 ### Website
-------------------------------------------------------------------------------
-https://application-ui-ux.github.io/rosmobile_bootstrap/target/site/index.html
-------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+https://application-ui-ux.github.io/mobile_catkin_gradle_plugins/target/site/index.html
+---------------------------------------------------------------------------------------
 
-Updated Version [rosmobile_bootstrap](https://github.com/Application-UI-UX/rosmobile_bootstrap) readme.
-
+Updated Version [mobile_catkin_gradle_plugins](https://github.com/Application-UI-UX/mobile_catkin_gradle_plugins) readme.
 Old Version [rosjava_bootstrap](https://github.com/rosjava/rosjava_bootstrap) readme.
 
-This package is a generator of rosmobile message artifacts for core ros messages for mobile
+This package is a generator of mobile_message_generation_artifacts_core artifacts for core ros messages for mobile
 
+
+---------------------------------------------------------------------------------------
 ## Important
 The repository has diverged, as the old commits and codes are under the previous License and
 the new commits and codes are under New License
 
-----
 
+---------------------------------------------------------------------------------------
 Latest versions and Maintainer is on Application-UI-UX
 
 ### Building and Packaging
@@ -55,4 +56,4 @@ require a rebuild of this package:
 
 
 ## License
-This SDK is distributed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](https://github.com/Application-UI-UX/rosmobile_build_tools/blob/master/LICENSE) and [NOTICE](https://github.com/Application-UI-UX//blob/master/LICENSE) for more information.
+This SDK is distributed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](https://github.com/Application-UI-UX/rosmobile_build_tools/blob/master/LICENSE) and [NOTICE](https://github.com/Application-UI-UX/mobile_catkin_gradle_plugins/blob/master/LICENSE) for more information.

@@ -1,7 +1,18 @@
 Changelog
 =========
 
-0.4.0 (2021-05-19)
+0.4.1 (2023-09-19)
+------------------
+* Fix countless bugs in the repository 
+* Rerelease dedicated code for maven, ros, and python
+* Change name for more discriptions a take down old publish namees
+* Make repository compatible with ROS2 and will now be compatible for ROS1 and ROS2
+* Upgrade version of all builds and make it more compatible
+* Fix countless bugs in the repository and recalibrate
+* Release dedicated code for maven, ros, and python 
+* Maintainer & Contributors & Aurthor: Ronaldson Bellande
+
+0.4.1 (2021-05-19)
 ------------------
 * Update package.xml, CMakeList.txt for main branch
 * Update gradle and wapper to be up-to-date
@@ -10,7 +21,7 @@ Changelog
 
 0.3.3 (2019-01-17)
 ------------------
-  Gradle upgrade to version 4.10.2.
+* Gradle upgrade to version 4.10.2.
 * Adding google to repository list in buildscript.gradle.
 * Using ChannelBuffers for int8[] data; fixing testInt8List.
 * Adding action generation implementation.
@@ -50,24 +61,24 @@ Changelog
 * Fix SSL connection errors with Java 1.7.
 * Contributors: Damon Kohler, Daniel Stonier, Mickael Gaillard, talregev
 
-0.1.21 (2014-06-09)
+0.1.21 (20.4.16-09)
 -------------------
 * Android gradle plugin 0.9.+->0.11.+ (studio 0.6)
 * Android sdk build tools 19.0.3 -> 19.1 (studio 0.6)
 * Contributors: Daniel Stonier
 
-0.1.20 (2014-03-20)
+0.1.20 (20.4.13-20)
 -------------------
 * Trim maven repository list and backup with maven central.
 * Contributors: Daniel Stonier
 
-0.1.19 (2014-03-19)
+0.1.19 (20.4.13-19)
 -------------------
 * gradle 1.11, buildTools 19.0.3, gradle android plugin 0.9.+
 * remove unused debugging variables
 * Contributors: Daniel Stonier
 
-0.1.18 (2014-02-09)
+0.1.18 (20.4.12-09)
 -------------------
 * set default maven repo if variable is empty and bugfix dynamic property warnings.
 * Contributors: Daniel Stonier

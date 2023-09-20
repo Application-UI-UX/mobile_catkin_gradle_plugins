@@ -17,7 +17,7 @@
 /*
  * *************************** ABORTED ***************************
  * 
- * See discussion in https://github.com/rosmobile/rosmobile_bootstrap/issues/41
+ * See discussion in https://github.com/rosmobile/mobile_catkin_gradle_plugins/issues/41
  * 
  * I've left this lying around as a useful reference.
  * ***************************************************************
@@ -30,12 +30,12 @@
  * 
  * Generally:
  * 
- *   apply from: "https://github.com/rosmobile/rosmobile_bootstrap/raw/kinetic/ros-java.gradle"
+ *   apply from: "https://github.com/rosmobile/mobile_catkin_gradle_plugins/raw/kinetic/ros-java.gradle"
  * 
  * In the root build.gradle file of a multiproject build:
  * 
  * subprojects {
- *   apply from: "https://github.com/rosmobile/rosmobile_bootstrap/raw/kinetic/ros-java.gradle"
+ *   apply from: "https://github.com/rosmobile/mobile_catkin_gradle_plugins/raw/kinetic/ros-java.gradle"
  *   ...
  * }
  */

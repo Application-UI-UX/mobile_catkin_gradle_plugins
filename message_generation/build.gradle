@@ -52,7 +52,7 @@ dependencies {
   // implementation 'org.apache.commons:com.springComponentssource.org.apache.commons.lang:2.4.0'
   implementation 'commons-lang:commons-lang:20030203.000129'
   implementation 'commons-pool:commons-pool:20030825.183949'
-  implementation 'com.github.Application-UI-UX:rosmobile_build_tools:0.4.0'
+  implementation 'com.github.Application-UI-UX:rosmobile_build_tools:0.4.1'
   testImplementation 'junit:junit:4.13.2'
 }
 
