@@ -1,21 +1,23 @@
 ## ROS Mobile Catkin Gradle Plugins 
 
 ### Website
-------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 https://application-ui-ux.github.io/mobile_catkin_gradle_plugins/target/site/index.html
-------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 
 Updated Version [mobile_catkin_gradle_plugins](https://github.com/Application-UI-UX/mobile_catkin_gradle_plugins) readme.
 Old Version [rosjava_bootstrap](https://github.com/rosjava/rosjava_bootstrap) readme.
 
-This package is a generator of rosmobile message artifacts for core ros messages for mobile
+This package is a generator of mobile_message_generation_artifacts_core artifacts for core ros messages for mobile
 
+
+---------------------------------------------------------------------------------------
 ## Important
 The repository has diverged, as the old commits and codes are under the previous License and
 the new commits and codes are under New License
 
 
-------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 Latest versions and Maintainer is on Application-UI-UX
 
 ### Building and Packaging
