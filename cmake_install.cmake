@@ -1,4 +1,4 @@
-# Install script for directory: /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap
+# Install script for directory: /home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -56,7 +56,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -68,7 +68,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -81,8 +81,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/installspace/setup.bash"
-    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/installspace/local_setup.bash"
+    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/catkin_generated/installspace/setup.bash"
+    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
@@ -96,8 +96,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/installspace/setup.sh"
-    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/installspace/local_setup.sh"
+    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/catkin_generated/installspace/setup.sh"
+    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
@@ -111,8 +111,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/installspace/setup.zsh"
-    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/installspace/local_setup.zsh"
+    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/catkin_generated/installspace/setup.zsh"
+    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
@@ -125,31 +125,31 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/installspace/rosmobile_bootstrap.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/catkin_generated/installspace/mobile_catkin_gradle_plugins.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosmobile_bootstrap/cmake" TYPE FILE FILES
-    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/installspace/rosmobile_bootstrapConfig.cmake"
-    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/catkin_generated/installspace/rosmobile_bootstrapConfig-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mobile_catkin_gradle_plugins/cmake" TYPE FILE FILES
+    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/catkin_generated/installspace/mobile_catkin_gradle_pluginsConfig.cmake"
+    "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/catkin_generated/installspace/mobile_catkin_gradle_pluginsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rosmobile_bootstrap" TYPE FILE FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mobile_catkin_gradle_plugins" TYPE FILE FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/maven/com/github/rosmobile_bootstrap" TYPE DIRECTORY FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/devel/share/maven/com/github/rosmobile_bootstrap/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/maven/com/github/mobile_catkin_gradle_plugins" TYPE DIRECTORY FILES "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/devel/share/maven/com/github/mobile_catkin_gradle_plugins/")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/gtest/cmake_install.cmake")
+  include("/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/gtest/cmake_install.cmake")
 
 endif()
 
@@ -161,5 +161,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/rosmobile_bootstrap/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ronaldsonbellande-hplaptop/Desktop/User_Interface_Experience/mobile_catkin_gradle_plugins/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

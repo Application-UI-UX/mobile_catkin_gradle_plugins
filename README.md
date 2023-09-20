@@ -2,10 +2,10 @@
 
 ### Website
 ------------------------------------------------------------------------------
-https://application-ui-ux.github.io/rosmobile_bootstrap/target/site/index.html
+https://application-ui-ux.github.io/mobile_catkin_gradle_plugins/target/site/index.html
 ------------------------------------------------------------------------------
 
-Updated Version [rosmobile_bootstrap](https://github.com/Application-UI-UX/rosmobile_bootstrap) readme.
+Updated Version [mobile_catkin_gradle_plugins](https://github.com/Application-UI-UX/mobile_catkin_gradle_plugins) readme.
 Old Version [rosjava_bootstrap](https://github.com/rosjava/rosjava_bootstrap) readme.
 
 This package is a generator of rosmobile message artifacts for core ros messages for mobile
