@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "mobile_catkin_gradle_plugins")
-set(mobile_catkin_gradle_plugins_VERSION "0.4.0")
+set(mobile_catkin_gradle_plugins_VERSION "0.4.1")
 set(mobile_catkin_gradle_plugins_MAINTAINER "Ronaldson Bellande <ronaldsonbellande@gmail.com>")
 set(mobile_catkin_gradle_plugins_PACKAGE_FORMAT "2")
 set(mobile_catkin_gradle_plugins_BUILD_DEPENDS "rosmobile_build_tools")

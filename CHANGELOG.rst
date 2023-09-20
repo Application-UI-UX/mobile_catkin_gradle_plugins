@@ -12,7 +12,7 @@ Changelog
 * Release dedicated code for maven, ros, and python 
 * Maintainer & Contributors & Aurthor: Ronaldson Bellande
 
-0.4.0 (2021-05-19)
+0.4.1 (2021-05-19)
 ------------------
 * Update package.xml, CMakeList.txt for main branch
 * Update gradle and wapper to be up-to-date
@@ -61,24 +61,24 @@ Changelog
 * Fix SSL connection errors with Java 1.7.
 * Contributors: Damon Kohler, Daniel Stonier, Mickael Gaillard, talregev
 
-0.1.21 (2014-06-09)
+0.1.21 (20.4.16-09)
 -------------------
 * Android gradle plugin 0.9.+->0.11.+ (studio 0.6)
 * Android sdk build tools 19.0.3 -> 19.1 (studio 0.6)
 * Contributors: Daniel Stonier
 
-0.1.20 (2014-03-20)
+0.1.20 (20.4.13-20)
 -------------------
 * Trim maven repository list and backup with maven central.
 * Contributors: Daniel Stonier
 
-0.1.19 (2014-03-19)
+0.1.19 (20.4.13-19)
 -------------------
 * gradle 1.11, buildTools 19.0.3, gradle android plugin 0.9.+
 * remove unused debugging variables
 * Contributors: Daniel Stonier
 
-0.1.18 (2014-02-09)
+0.1.18 (20.4.12-09)
 -------------------
 * set default maven repo if variable is empty and bugfix dynamic property warnings.
 * Contributors: Daniel Stonier
