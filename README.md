@@ -1,7 +1,7 @@
 ## ROS/ROS2 {BAI&XRI} Mobile Catkin Gradle Plugins 
 
-[![Website](https://img.shields.io/badge/Visit%20our-Website-0099cc?style=for-the-badge)](https://https://application-ui-ux.github.io)
-[![Discord](https://img.shields.io/badge/Join%20our-Discord-7289DA?logo=discord&style=for-the-badge)](https://discord.gg/Yc72nd4w)
+[![Website](https://img.shields.io/badge/Visit%20our-Website-0099cc?style=for-the-badge)](https://img.shields.io/website/https/application-ui-ux.github.io/mobile_catkin_gradle_plugins?style=for-the-badge)
+[![Discord](https://img.shields.io/badge/Join%20our-Discord-7289DA?logo=discord&style=for-the-badge)](https://img.shields.io/discord/https/discord.gg/Yc72nd4w?label=Join%20our%20Discord&style=for-the-badge)
 [![Sponsor](https://img.shields.io/badge/Sponsor-Application%20UI%20UX%20Research-red?style=for-the-badge&logo=github)](https://github.com/sponsors/Application-UI-UX)
 
 # Stats
@@ -16,32 +16,23 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/Application-UI-UX/mobile_catkin_gradle_plugins.svg)](https://github.com/Application-UI-UX/mobile_catkin_gradle_plugins/commits)
 [![Visitor & Github Clones](https://img.shields.io/badge/dynamic/json?color=2e8b57&label=Visitor%20%26%20GitHub%20Clones&query=$.count&url=https://api.github.com/repos/Application-UI-UX/mobile_catkin_gradle_plugins/traffic)](https://github.com/Application-UI-UX/mobile_catkin_gradle_plugins)
 
-
 ### Repository Website
----------------------------------------------------------------------------------------
-https://application-ui-ux.github.io/mobile_catkin_gradle_plugins
----------------------------------------------------------------------------------------
+[![Website](https://img.shields.io/website/https/application-ui-ux.github.io/mobile_catkin_gradle_plugins?down_color=red&down_message=offline&label=Repository%20Website&style=for-the-badge)](https://application-ui-ux.github.io/mobile_catkin_gradle_plugins)
 
 Updated Version [mobile_catkin_gradle_plugins](https://github.com/Application-UI-UX/mobile_catkin_gradle_plugins) readme.
+
 Old Version [rosjava_bootstrap](https://github.com/rosjava/rosjava_bootstrap) readme.
 
 This package is a generator of mobile_message_generation_artifacts_core artifacts for core ros messages for mobile
-
----------------------------------------------------------------------------------------
-
-# Contact
-Depeding on the repository, If you are interested in accessing the complete version or other repository related to this repository, we kindly request that you reach out to the organization's director or the company behind this project. We invite you to explore the USE CASE to understand the specific terms and conditions for usage. To utilize this repository, it is imperative that you adhere to the guidelines outlined in the USE CASE. For those interested in showing their support, becoming a sponsor of the organization is an option, and detailed information can be found within the USE CASE and License documents. Furthermore, we encourage you to join our official Discord community, where you can engage with like-minded individuals, contribute to the project, and stay up-to-date with the latest developments. It's worth noting that while a fraction of research is publicly accessible, the majority remains private. To gain insights into the wealth of knowledge held by the Company or the organization's director, we recommend direct contact for more information.
 
 ## Important
 The repository has diverged, as the old commits and codes are under the previous License and
 the new commits and codes are under New License
 
-
----------------------------------------------------------------------------------------
 Latest versions and Maintainer is on Application-UI-UX
 
 ### Building and Packaging
-The package is published in https://github.com/Application-UI-UX
+The package is published in [https://github.com/Application-UI-UX](https://github.com/Application-UI-UX)
 
 ### Adding Packages
 
@@ -71,16 +62,8 @@ require a rebuild of this package:
 * tag it with the new version number
 * release
 
-
-# USE CASE
---------------------------------------------------------------------------------------------------------
-* Every repository within our organization is a valuable resource that can be utilized for educational purposes by individuals who actively contribute to the repository or choose to become sponsors of the organization. For those who wish to use our services conversationally, the acquisition of a license and subscription from our company website is mandatory. This ensures that the services are appropriately compensated for their use. Additionally, for the 90% of services designated as private, acquiring a license and subscription can be facilitated through our company website. We encourage interested parties to visit our website to explore and procure the necessary licenses and subscriptions for the diverse range of services and products we offer. Your support and commitment enable us to maintain and enhance the quality of our offerings, contributing to a thriving collaborative environment.
---------------------------------------------------------------------------------------------------------
-
-
 ### Maintainer
-* Ronaldson Bellande
-
+Ronaldson Bellande
 
 ## License
 This SDK is distributed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](https://github.com/Application-UI-UX/rosmobile_build_tools/blob/master/LICENSE) and [NOTICE](https://github.com/Application-UI-UX/mobile_catkin_gradle_plugins/blob/master/LICENSE) for more information.
