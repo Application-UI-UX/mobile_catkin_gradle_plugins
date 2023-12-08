@@ -36,9 +36,6 @@ the new commits and codes are under New License
 - ROS2 ----> [![ROS2](https://img.shields.io/badge/ROS2-temp-blue?style=for-the-badge)](https://temp)
 - Maven ----> [![Maven](https://img.shields.io/badge/Maven-Application--UI--UX-blue?style=for-the-badge)](https://github.com/Application-UI-UX)
 
-### Building and Packaging
-The package is published in [https://github.com/Application-UI-UX](https://github.com/Application-UI-UX)
-
 ### Adding Packages
 
 If you would like to add a message dependency to this list, first consider if it is a worthwhile candidate, these libraries 
